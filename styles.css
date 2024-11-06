@@ -1,0 +1,75 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0a23, #2d2d80);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.group-container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 5rem; /* Doubled font size */
+    font-weight: bold;
+    color: #ffffff; /* White title */
+    margin-bottom: 40px; /* Spacing below title */
+}
+
+/* Layout for the members in one row */
+.members {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    flex-wrap: nowrap; /* Keep all items in a single row */
+}
+
+.member {
+    text-align: center;
+    padding: 10px;
+    flex: 1; /* Distribute space evenly among all members */
+}
+
+.member img {
+    width: 180px; /* Adjusted image size to fit all members in one row */
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #efe708; /* Light green border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.member img:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.member-name {
+    margin-top: 10px;
+    font-size: 1.2rem; /* Reduced font size for names */
+    font-weight: 600;
+    color: #ffffff; /* White color for names */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .title {
+        font-size: 3rem; /* Slightly smaller for mobile */
+    }
+    .member img {
+        width: 100px; /* Smaller size for mobile */
+        height: 100px;
+    }
+    .member-name {
+        font-size: 0.9rem;
+    }
+}
