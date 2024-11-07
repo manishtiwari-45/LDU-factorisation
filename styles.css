@@ -1,4 +1,5 @@
-body {
+
+.group-container {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0a0a23, #2d2d80);
     color: #fff;
@@ -7,9 +8,6 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-}
-
-.group-container {
     text-align: center;
     width: 100%;
     max-width: 1200px;
