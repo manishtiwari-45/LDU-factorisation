@@ -9,52 +9,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="group-container">
-        <h2 class="title"><i class="fas fa-laptop-code"></i> Group Project</h2>
-        <div class="members">
-            <div class="member">
-                <img src="manish.jpg" alt="Manish Kumar Tiwari">
-                <p class="member-name">Manish Tiwari</p>
-            </div>
-            <div class="member">
-                <img src="pinky.jpg" alt="Pinky Rana">
-                <p class="member-name">Pinky Rana</p>
-            </div>
-            <div class="member">
-                <img src="trivedh.jpg" alt="Trivedh Kumar">
-                <p class="member-name">Trivedh Kumar</p>
-            </div>
-            <div class="member">
-                <img src="ompal.jpg" alt="Ompal Yadav">
-                <p class="member-name">Ompal Yadav</p>
-            </div>
-            <div class="member">
-                <img src="sunny.jpg" alt="Sunny Kumar">
-                <p class="member-name">Sunny Kumar</p>
-            </div>
-        </div>
-    </div> 
-    <br>
-    <br>
-    <header><big>Welcome to LDU Factorization Tool</big></header>
     <main>
-        <div id="desc_LDU">
-            <dl>
-                <dt>LDU Factorization:</dt>
-                <dd><pre>Decomposition of a square matrix into 3 different matrices which are
-L(Lower triangular matrix),D(diagonal matrix),U(upper triangular matrix) </pre></dd>
-            <dt>A=L*D*U</dt>
-            <dd><pre>A=Square Matrix of arbitary matrix
-L=Lower Triangular Matrix
-D=Diagonal Matrix
-U=Upper Triangulaar Matrix
-            </pre></dd>        
-            </dl>
-        <div id="input_order">
-            Enter the demisions of the square matrix=<input type="number" placeholder="No.of Rows" id="rows">x<input type="number" placeholder="No.of Columns" id="cols">
-            <br><button onclick="gen_matrix_()">Generative Matrix</button>
-        </div>
-        <div id="gridContainer" class="grid-container"></div>
+        <header>
+            <h1>Welcome to LDU Factorization Tool</h1>
+        </header>
+
+        <section class="group-container">
+            <h2 class="title"><i class="fas fa-laptop-code"></i> Group Project</h2>
+            <div class="members">
+                <div class="member">
+                    <img src="manish.jpg" alt="Manish Kumar Tiwari">
+                    <p class="member-name">Manish Tiwari</p>
+                </div>
+                <div class="member">
+                    <img src="pinky.jpg" alt="Pinky Rana">
+                    <p class="member-name">Pinky Rana</p>
+                </div>
+                <div class="member">
+                    <img src="trivedh.jpg" alt="Trivedh Kumar">
+                    <p class="member-name">Trivedh Kumar</p>
+                </div>
+                <div class="member">
+                    <img src="ompal.jpg" alt="Ompal Yadav">
+                    <p class="member-name">Ompal Yadav</p>
+                </div>
+                <div class="member">
+                    <img src="sunny.jpg" alt="Sunny Kumar">
+                    <p class="member-name">Sunny Kumar</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="LDU-calculator">
+            <h2 class="LDU">LDU Factorization Calculator</h2>
+            <a class="ldu-button" href="calculator.html">Click Here</a>
+        </section>
     </main>
 </body>
 <body>
