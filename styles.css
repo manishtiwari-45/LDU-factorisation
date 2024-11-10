@@ -1,5 +1,6 @@
 /* Main container for the group section */
 .group-container {
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif; /* Font style for text */
     background: linear-gradient(135deg, #0a0a23, #2d2d80); /* Background with a gradient */
     color: #fff; /* White text color */
@@ -9,6 +10,21 @@
     min-height: 70vh; /* Minimum height of the container */
     max-width: 1500px; /* Maximum width of the container */
     margin-bottom: 40px; /* Space below the container */
+=======
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f52, #6b6ba7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+    text-align: center;
+    width: 110%;
+    max-width: 1500px;
+    padding: 0;
+    margin-bottom: 40px;
+>>>>>>> 86ddb0033b3322952adbd0785dede7b078ca492e
 }
 
 /* Styling for the title in the group section */
@@ -69,6 +85,12 @@
 }
 /* Header styling across the page or section */
 header {
+<<<<<<< HEAD
+=======
+    color: #f8fafa;
+    /* background-color: rgb(15, 81, 134); */
+    font-size: 32px;
+>>>>>>> 86ddb0033b3322952adbd0785dede7b078ca492e
     text-align: center;
     color: #efe708; /* Yellow text color for header text */
     background-color: rgb(15, 81, 134); /* Dark blue background color for header */
@@ -76,10 +98,19 @@ header {
 
 /* Styling for LDU calculator section container */ 
 #LDU-calculator {
+<<<<<<< HEAD
    font-family:'Gill Sans MT'; /* Specific font style for this section */ 
    text-align:center; /* Center align content in this section */ 
    margin:50px auto; /* Margin around the calculator container */ 
    max-width:600px; /* Maximum width limit for this section */ 
+=======
+    font-family:'Gill Sans MT';
+    text-align: center;
+    font-size: 1.5em;
+    margin: 50px auto;
+    max-width: 600px;
+    color: #fff;
+>>>>>>> 86ddb0033b3322952adbd0785dede7b078ca492e
 }
 
 /* Button styling within the LDU calculator section */ 
@@ -95,9 +126,20 @@ header {
    transition : transform .3s ease , box-shadow .3s ease , background-color .3s ease; /* Smooth transition effects */ 
 }
 
+<<<<<<< HEAD
 /* Hover effects for LDU buttons */ 
 .ldu-button:hover { 
    background-color:#2980b9; /* Darker blue background on hover */ 
    box-shadow :0 ,6px ,15px rgba(0,0,0,.3); /* Deeper shadow on hover */ 
    transform :translateY(-3px); /* Move button up slightly on hover */ 
+=======
+.ldu-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+body{  background: linear-gradient(135deg, #1f1f52, #6b6ba7);
+    ;
+
+>>>>>>> 86ddb0033b3322952adbd0785dede7b078ca492e
 }
