@@ -91,17 +91,6 @@ button:hover {
     border-radius: 5px;
 }
 
-#steps-output {
-    background-color: #e9f4ff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.05);
-    font-size: 1rem;
-    color: #333;
-    max-height: 400px;
-    overflow-y: auto;
-}
-
 #steps-output p {
     margin-bottom: 8px;
 }
