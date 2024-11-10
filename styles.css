@@ -1,7 +1,6 @@
 /* Main container for the group section */
 .group-container {
     font-family: 'Poppins', sans-serif; /* Font style for text */
-    background: linear-gradient(135deg, #0a0a23, #2d2d80); /* Background with a gradient */
     color: #fff; /* White text color */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack items vertically */
@@ -9,22 +8,6 @@
     min-height: 70vh; /* Minimum height of the container */
     max-width: 1500px; /* Maximum width of the container */
     margin-bottom: 40px; /* Space below the container */
-<<<<<<< HEAD
-=======
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1f1f52, #6b6ba7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70vh;
-    margin: 0;
-    text-align: center;
-    width: 110%;
-    max-width: 1500px;
-    padding: 0;
-    margin-bottom: 40px;
->>>>>>> b3c7e6b9dc121113db9ff7897ac1d643c86315ca
 }
 
 /* Styling for the title in the group section */
