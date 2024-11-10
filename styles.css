@@ -79,7 +79,6 @@
     .member-name {
         font-size: 0.9rem; /* Smaller font size for names on mobile devices */
     }
-<<<<<<< HEAD
 }
 #h1{
     font-size: 600;
@@ -124,5 +123,3 @@ header {
 body{
     background: linear-gradient(135deg, #0a0a23, #2d2d80);
 }
-=======
->>>>>>> b3c7e6b9dc121113db9ff7897ac1d643c86315ca
