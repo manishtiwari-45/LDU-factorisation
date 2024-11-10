@@ -1,18 +1,26 @@
 LDU Factorization Calculator********
 Project Overview
+
 LDU Factorization Calculator is an interactive website designed to calculate the LDU factorization of a given matrix, offering a detailed, step-by-step explanation of each part of the process. Built to provide insight into matrix factorization, the tool enables users to input matrix dimensions and observe how the factorization unfolds, making it ideal for both educational and practical use.
+it calculates and displays each step of the factorisation in detail, helping users to understand the process.
 
 Features********
+user can enter custom matrices of any dimension.
 Step-by-Step Explanation Using Elimination Matrix: The LDU factorization process is presented with each step carried out using the elimination matrix method, which decomposes the original matrix in a structured manner.
 User-Friendly Interface: A straightforward layout with input fields to enter matrix dimensions, ensuring easy navigation and interaction.
-Clear output as L,D,U
+Clear output as L,D,U.
 U Matrices: Displays the resulting matrices in a clear, readable format.
+Responsive Design:compatible with various devices and screen sizes.
 
 
 Technologies Used******
 HTML, CSS, JavaScript: For structuring, styling, and providing functionality to the website.
 Git: Version control to manage project changes effectively.
+Documentation and Communication : Professional documentation practice and tools.
 
+USAGE****** 
+1.Enter the matrix dimensions and values.
+2.Click "Calculate" to see the LDU factorisation and steps.
 
 Purpose*****
 The purpose of this project is to provide an accessible and interactive platform for understanding LDU factorization, especially focusing on the elimination matrix method. This approach helps users gain a more intuitive grasp of matrix transformations and decomposition, making it a valuable resource for students, educators, and professionals alike.
@@ -24,3 +32,10 @@ So E*A= D*U and L=E^-1
 => A= L*D*U
 since D*U=E*A AND L=E^-1 So A= E^-1 * E *  A =>A
 Hence we have sucessfully done the LDU factorisation of the matrix.
+
+Team Members******
+1. Manish Kumar Tiwari
+2. Pinky Rana
+3. Sunny Kumar
+4. Ompal Yadav
+5. Challa Trivedh Kumar
