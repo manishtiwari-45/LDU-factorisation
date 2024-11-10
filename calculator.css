@@ -106,3 +106,8 @@ button:hover {
 #steps-output p {
     margin-bottom: 8px; /* Space below each step */
 }
+#Home{
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
