@@ -70,16 +70,19 @@
 /* Header styling across the page or section */
 header {
     text-align: center;
-    color: #efe708; /* Yellow text color for header text */
-    background-color: rgb(15, 81, 134); /* Dark blue background color for header */
+    color: #fff; /* Yellow text color for header text */
+    /* background-color: rgb(15, 81, 134); Dark blue background color for header */
+    font-size: 25px;
 }
-
+/*  */
 /* Styling for LDU calculator section container */ 
 #LDU-calculator {
    font-family:'Gill Sans MT'; /* Specific font style for this section */ 
    text-align:center; /* Center align content in this section */ 
    margin:50px auto; /* Margin around the calculator container */ 
-   max-width:600px; /* Maximum width limit for this section */ 
+   max-width:600px;
+    /* Maximum width limit for this section */ 
+    color:#fff;
 }
 
 /* Button styling within the LDU calculator section */ 
@@ -100,4 +103,7 @@ header {
    background-color:#2980b9; /* Darker blue background on hover */ 
    box-shadow :0 ,6px ,15px rgba(0,0,0,.3); /* Deeper shadow on hover */ 
    transform :translateY(-3px); /* Move button up slightly on hover */ 
+}
+body{
+    background: linear-gradient(135deg, #0a0a23, #2d2d80);
 }
