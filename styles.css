@@ -1,109 +1,103 @@
+/* Main container for the group section */
 .group-container {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0a0a23, #2d2d80);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70vh;
-    margin: 0;
-    text-align: center;
-    width: 110%;
-    max-width: 1500px;
-    padding: 0;
-    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif; /* Font style for text */
+    background: linear-gradient(135deg, #0a0a23, #2d2d80); /* Background with a gradient */
+    color: #fff; /* White text color */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 70vh; /* Minimum height of the container */
+    max-width: 1500px; /* Maximum width of the container */
+    margin-bottom: 40px; /* Space below the container */
 }
 
+/* Styling for the title in the group section */
 .title {
-    font-size: 5rem;
-    font-weight: bold;
-    color: #ffffff; 
-    margin-bottom: 40px; 
+    font-size: 5rem; /* Large font size for the title */
+    margin-bottom: 40px; /* Space below the title */
 }
 
+/* Container for member profiles */
 .members {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    padding: 0 10px;
-    flex-wrap: nowrap; 
+    display: flex; /* Use flexbox layout for members */
+    justify-content: space-evenly; /* Evenly space members across the container */
+    align-items: center; /* Center members vertically */
+    gap: 20px; /* Space between each member profile */
 }
 
+/* Individual member profile styling */
 .member {
-    text-align: center;
-    padding: 10px;
-    flex: 1; 
+    text-align: center; /* Center align text in each member profile */
 }
 
+/* Styling for member images (photos) */
 .member img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 4px solid #efe708; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    width: 180px; /* Set width of images to 180 pixels */
+    height: 180px; /* Set height of images to 180 pixels */
+    border-radius: 50%; /* Make images round (circular) */
+    border: 4px solid #efe708; /* Yellow border around images */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect to images for depth */
 }
 
+/* Effects when hovering over member images */
 .member img:hover {
-    transform: scale(1.15);
-    opacity: 0.9;
+    transform: scale(1.15); /* Slightly enlarge image on hover */
 }
 
+/* Styling for member names below their images */
 .member-name {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
+    margin-top: 10px; /* Space above the name text */
 }
 
+/* Responsive styles for smaller screens (max-width of 800px) */
 @media (max-width: 800px) {
     .title {
-        font-size: 3rem;
+        font-size: 3rem; /* Smaller font size for title on mobile devices */
     }
+    
     .member img {
-        width: 100px;
+        width: 100px; /* Smaller image size on mobile devices (100 pixels) */
         height: 100px;
     }
+    
     .member-name {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Smaller font size for names on mobile devices */
     }
 }
-
+#h1{
+    font-size: 600;
+}
+/* Header styling across the page or section */
 header {
-    color: #efe708;
-    background-color: rgb(15, 81, 134);
-    font-size: 32px;
     text-align: center;
-    font-weight: bold;
+    color: #efe708; /* Yellow text color for header text */
+    background-color: rgb(15, 81, 134); /* Dark blue background color for header */
 }
 
+/* Styling for LDU calculator section container */ 
 #LDU-calculator {
-    font-family:'Gill Sans MT';
-    text-align: center;
-    font-size: 1.5em;
-    margin: 50px auto;
-    max-width: 600px;
+   font-family:'Gill Sans MT'; /* Specific font style for this section */ 
+   text-align:center; /* Center align content in this section */ 
+   margin:50px auto; /* Margin around the calculator container */ 
+   max-width:600px; /* Maximum width limit for this section */ 
 }
 
-.ldu-button {
-    display: inline-block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 22px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #3498db;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+/* Button styling within the LDU calculator section */ 
+.ldu-button { 
+   display:inline-block; /* Display button as inline block element */ 
+   padding:10px 20px; 
+   font-size:22px;
+   font-weight:bold;
+   color:#ffffff; /* White text color */ 
+   background-color:#3498db; /* Light blue background */ 
+   border:none; /* No border */ 
+   border-radius :8px; /* Rounded corners */ 
+   transition : transform .3s ease , box-shadow .3s ease , background-color .3s ease; /* Smooth transition effects */ 
 }
 
-.ldu-button:hover {
-    background-color: #2980b9;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+/* Hover effects for LDU buttons */ 
+.ldu-button:hover { 
+   background-color:#2980b9; /* Darker blue background on hover */ 
+   box-shadow :0 ,6px ,15px rgba(0,0,0,.3); /* Deeper shadow on hover */ 
+   transform :translateY(-3px); /* Move button up slightly on hover */ 
 }
