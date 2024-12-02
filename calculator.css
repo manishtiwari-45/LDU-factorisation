@@ -1,113 +1,227 @@
-/* General reset for consistent styling across browsers */
-* {
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #1E90FF);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Body styling */
-body {
-    display: flex; /* Centers content horizontally */
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content in the viewport */
-    min-height: 100vh; /* Full viewport height */
-    color: #333; /* Default text color */
-    padding: 20px;
-    background: linear-gradient(135deg, #1f1f52, #6b6ba7); /* Gradient background */
-}
-
-/* Header styling */
-header {
-    text-align: center; /* Center-aligns header text */
-    margin-bottom: 20px; /* Space below header */
-    color: #fff; /* White text color */
-}
-
-/* Main heading inside header */
-header h1 {
-    font-size: 2rem; /* Large font size */
+/* Page Header */
+#heading-h1 h1 {
+    font-size: 40px;
     color: #fff;
-    padding-bottom: 10px; /* Space below heading */
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Main content styling */
-main {
-    max-width: 600px; /* Max width of the main container */
-    width: 100%; /* Full width on smaller screens */
-    padding: 20px; /* Padding inside the container */
-    background-color: #fff; /* White background for contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Input Section */
+#label {
+    text-align: center;
+    margin: 20px 0;
 }
 
-/* Section styling for form sections */
-section {
-    margin-bottom: 20px; /* Space below each section */
-}
-
-/* Label styling */
 label {
-    font-size: 1.1rem; /* Slightly larger font */
-    margin-bottom: 8px; /* Space below label */
-    display: inline-block;
-    color: #555; /* Darker grey for readability */
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
 }
 
-/* Input styling for number fields */
 input[type="number"] {
-    width: 100%; /* Full width to align with the form */
-    padding: 10px; /* Inner padding for readability */
-    margin-top: 8px;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners for inputs */
+    width: 80px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Button styling */
-button {
-    width: 100%; /* Full-width button */
-    padding: 12px; /* Padding for a larger button */
-    font-size: 1rem; /* Standard font size */
-    color: #fff; /* White text color */
-    background-color: #0066cc; /* Primary blue color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+input[type="number"]:focus {
+    border-color: #ff9800;
+    outline: none;
+    box-shadow: 0 0 10px #ff9800;
 }
 
-/* Button hover effect */
-button:hover {
-    background-color: #004d99; /* Darker blue on hover */
+#error {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-/* Flexbox styling for matrix input container */
-#matrix-inputs {
-    display: flex; /* Enables flexible layout */
-    flex-wrap: wrap; /* Wraps elements to the next line */
-    gap: 10px; /* Space between elements */
-    margin-bottom: 15px;
+/* Matrix Input Container */
+#input-matrix-container {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 95%;
 }
 
-/* Styling for each individual matrix input */
-#matrix-inputs input {
-    width: 48px; /* Fixed width for matrix cells */
-    padding: 10px; /* Padding for better readability */
-    font-size: 0.9rem; /* Smaller font size */
-    text-align: center; /* Center-aligns text within input */
-    border: 1px solid #ccc; /* Light border for visibility */
-    border-radius: 5px; /* Rounded corners */
+/* Matrix Grid Styling */
+#input-matrix-container .matrix-grid {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Styling for output steps section */
-#steps-output p {
-    margin-bottom: 8px; /* Space below each step */
+/* Dynamic Grid Template Based on Order */
+#input-matrix-container[data-order="2"] .matrix-grid {
+    grid-template-columns: repeat(2, 60px);
 }
-#Home{
-    font-size: 30px;
-    margin-bottom: 100px;
-    margin-top: 5px;
+
+#input-matrix-container[data-order="3"] .matrix-grid {
+    grid-template-columns: repeat(3, 60px);
+}
+
+#input-matrix-container[data-order="4"] .matrix-grid {
+    grid-template-columns: repeat(4, 60px);
+}
+
+#input-matrix-container[data-order="n"] .matrix-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+
+/* Matrix Inputs */
+.matrix-input {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.matrix-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 10px #4CAF50;
+}
+
+/* Button Styling Inside Matrix Container */
+#input-matrix-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #4CAF50, #1E90FF);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#input-matrix-container button:hover {
+    background: linear-gradient(135deg, #1E90FF, #4CAF50);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#input-matrix-container button:active {
+    transform: scale(0.95);
+}
+
+
+/* Results Section */
+#result-div {
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#result-div h2,
+#result-div h3,
+#result-div h4 {
+    text-align: center;
+    margin: 10px 0;
+    color: #444;
+}
+
+#result-div h3 {
+    color: #ff9800;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+th,
+td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(135deg, #4CAF50, #1E90FF);
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #e3f2fd;
+}
+
+/* Footer Responsiveness */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="number"],
+    .matrix-input {
+        width: 50px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #result-div {
+        padding: 15px;
+    }
 }
