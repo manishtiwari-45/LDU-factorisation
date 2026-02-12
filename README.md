@@ -1,41 +1,95 @@
-LDU Factorization Calculator********
-Project Overview
+# LDU Factorization Calculator
 
-LDU Factorization Calculator is an interactive website designed to calculate the LDU factorization of a given matrix, offering a detailed, step-by-step explanation of each part of the process. Built to provide insight into matrix factorization, the tool enables users to input matrix dimensions and observe how the factorization unfolds, making it ideal for both educational and practical use.
-it calculates and displays each step of the factorisation in detail, helping users to understand the process.
+## Project Overview
 
-Features********
-user can enter custom matrices of any dimension.
-Step-by-Step Explanation Using Elimination Matrix: The LDU factorization process is presented with each step carried out using the elimination matrix method, which decomposes the original matrix in a structured manner.
-User-Friendly Interface: A straightforward layout with input fields to enter matrix dimensions, ensuring easy navigation and interaction.
-Clear output as L,D,U.
-U Matrices: Displays the resulting matrices in a clear, readable format.
-Responsive Design:compatible with various devices and screen sizes.
+The **LDU Factorization Calculator** is an interactive website that calculates the **LDU decomposition** of a given matrix.  
+It also shows the **full step-by-step process**, making it useful for learning and understanding how matrix factorization works.
 
+This tool is mainly designed for students and anyone who wants to explore the elimination method used in LDU factorization.
 
-Technologies Used******
-HTML, CSS, JavaScript: For structuring, styling, and providing functionality to the website.
-Git: Version control to manage project changes effectively.
-Documentation and Communication : Professional documentation practice and tools.
+---
 
-USAGE****** 
-1.Enter the matrix dimensions and values.
-2.Click "Calculate" to see the LDU factorisation and steps.
+## Features
 
-Purpose*****
-The purpose of this project is to provide an accessible and interactive platform for understanding LDU factorization, especially focusing on the elimination matrix method. This approach helps users gain a more intuitive grasp of matrix transformations and decomposition, making it a valuable resource for students, educators, and professionals alike.
+- **Custom Matrix Input**  
+  Users can enter matrices of any dimension.
 
-Process***
-We have done the project via Elimination matrix method. Here we were to generate elimination matrix so that we can tranform our matrix into upper triaangular matrix. The elimination happens to be a lower triangular matrix and L is the inverse of Elimination matrix. The upper triaangular matrix that we have got after transformation is to be divided into two maatrix D which is  a diagonal matrix and U an uppertriangular matrix with diaginal elemnts as 1. 
-Suppose A is our original matrix. 
-So E*A= D*U and L=E^-1
-=> A= L*D*U
-since D*U=E*A AND L=E^-1 So A= E^-1 * E *  A =>A
-Hence we have sucessfully done the LDU factorisation of the matrix.
+- **Step-by-Step Factorization**  
+  Each step is shown clearly using the **elimination matrix method**.
 
-Team Members******
-1. Manish Kumar Tiwari
-2. Pinky Rana
-3. Sunny Kumar
-4. Ompal Yadav
-5. Challa Trivedh Kumar
+- **Final Output Matrices**  
+  Displays the resulting:
+
+  - **L** (Lower Triangular Matrix)  
+  - **D** (Diagonal Matrix)  
+  - **U** (Upper Triangular Matrix with 1s on the diagonal)
+
+- **Simple and User-Friendly Interface**  
+  Easy input fields and a clear "Calculate" button.
+
+- **Responsive Design**  
+  Works well on different screen sizes and devices.
+
+---
+
+## Technologies Used
+
+- **HTML** – Structure of the website  
+- **CSS** – Styling and layout  
+- **JavaScript** – Matrix calculations and step generation  
+- **Git** – Version control and collaboration  
+
+---
+
+## How to Use
+
+1. Enter the matrix dimensions and values.
+2. Click the **Calculate** button.
+3. View the step-by-step elimination process.
+4. Get the final **L, D, and U matrices**.
+
+---
+
+## Method Used (Elimination Matrix Approach)
+
+We use the elimination matrix method to perform LDU factorization:
+
+- The matrix **A** is converted into an upper triangular form using elimination matrices.
+- The elimination matrix **E** transforms the matrix:
+
+\[
+E \cdot A = D \cdot U
+\]
+
+- The lower triangular matrix **L** is the inverse of elimination matrix:
+
+\[
+L = E^{-1}
+\]
+
+So finally:
+
+\[
+A = L \cdot D \cdot U
+\]
+
+This confirms the successful decomposition of the matrix.
+
+---
+
+## Purpose of This Project
+
+The goal of this project is to provide an easy and interactive way to understand **LDU factorization**, especially through elimination steps, which are often confusing in textbooks.
+
+---
+
+## Team Members
+
+1. **Manish Kumar Tiwari**  
+2. **Pinky Rana**  
+3. **Sunny Kumar**  
+4. **Ompal Yadav**  
+5. **Challa Trivedh Kumar**
+
+---
+
